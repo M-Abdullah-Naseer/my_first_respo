@@ -26,6 +26,11 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
+
+      - name: Check if requirements.txt exists
+        run: |
+          ls -la
+
       
       - name: Install dependencies
         run: pip install -r requirements.txt
