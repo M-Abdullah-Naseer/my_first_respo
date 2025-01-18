@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def pageFirst():
- return "Welcome to the First Page!"
+ return render_template('ITC-Home.html')
 
 @app.route('/home')
 def home():
