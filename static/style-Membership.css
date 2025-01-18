@@ -1,0 +1,122 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dcdcdc;
+        }
+
+
+        #top {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(0, 200, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        #top .hello {
+            color: white;
+            font-family: serif;
+            font-size: 30px;
+        }
+
+        #top .col {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        input {
+            width: 200px;
+
+        }
+
+        .fa {
+            margin-left: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-left: 30px;
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: rgb(217, 217, 217);
+            opacity: 70%;
+        }
+
+        .container {
+            width: 1200px;
+            text-align: center;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .pac1, .pac2, .pac3 {
+            display: inline-block;
+            position: relative;
+            border-radius: 30px;
+            height: 600px;
+            width: 400px;
+            margin: 20px;
+            text-align: center;
+            background: linear-gradient(rgb(91, 91, 255), rgb(255, 123, 123), pink);
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .packages {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .pac1 ul, .pac2 ul, .pac3 ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .pac1 li, .pac2 li, .pac3 li {
+            font-size: 18px;
+            color: white;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .pac1 li:hover, .pac2 li:hover, .pac3 li:hover {
+            color: rgb(255, 215, 0);
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }

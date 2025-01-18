@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',  filename='style-About.css')}}">
+    <title>Gold's Gym USA - About Us</title>
+</head>
+<body>
+
+<div id="top">
+    <p class="hello"><i class="material-icons">fitness_center</i> Gold Gym USA</p>
+    <div class="col">
+        <input type="text"><i class="fa fa-search"></i>
+    </div>
+    <div>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('memb') }}">Membership</a>
+
+    </div>
+</div>
+
+<h1 style="text-align: center;">About Us</h1>
+
+<section>
+    <h2>Our Mission</h2>
+    <p>At <strong>Gold's Gym USA</strong>, our mission is simple: <strong>to inspire and empower individuals to achieve their fitness goals and live healthier, stronger lives</strong>. We provide a welcoming environment where people of all ages and fitness levels feel supported, motivated, and challenged. With cutting-edge equipment, top-tier facilities, and expert guidance, we help you push past limits and unlock your true potential.</p>
+</section>
+
+<section>
+    <h2>Why Choose Gold's Gym USA?</h2>
+    <h3>A Proven Legacy of Excellence</h3>
+    <p>For over <strong>5 years</strong>, Gold’s Gym USA has been at the forefront of fitness innovation. With a legacy rooted in helping individuals transform both physically and mentally, we continue offering <strong>world-class equipment</strong>, <strong>expert trainers</strong>, and a <strong>welcoming community</strong> to all our members.</p>
+
+    <h3>Comprehensive Fitness Options for Every Goal</h3>
+    <ul>
+        <li style="list-style-type: none;"><strong>Personal Training</strong>: Get customized coaching to hit your personal goals.</li>
+        <li style="list-style-type: none;"><strong>Group Fitness Classes</strong>: From HIIT to Yoga, our expert instructors lead energizing sessions that challenge and motivate.</li>
+        <li style="list-style-type: none;"><strong>Cardio & Strength Equipment</strong>: Our expansive gym floor is equipped with the latest cardio machines, weight training systems, and functional fitness equipment.</li>
+        <li style="list-style-type: none;"><strong>Specialty Programs</strong>: Weight loss, injury recovery, and more—our specialized programs are designed to address specific needs.</li>
+    </ul>
+
+    <h3>State-of-the-Art Facilities</h3>
+    <p>Gold’s Gym USA locations are equipped with the latest in fitness technology and amenities, including:</p>
+    <ul>
+        <li style="list-style-type: none;">Full-service <strong>locker rooms</strong></li>
+        <li style="list-style-type: none;"><strong>Recovery zones</strong> for stretching and relaxation</li>
+        <li style="list-style-type: none;"><strong>Nutrition counseling</strong> to help you make the best food choices for your body</li>
+        <li style="list-style-type: none;"><strong>Inspiring workout spaces</strong> designed for performance and comfort</li>
+    </ul>
+</section>
+
+<section>
+    <h2>The Gold's Gym Community</h2>
+    <p>When you join <strong>Gold’s Gym USA</strong>, you become part of a larger fitness family. Our gym is more than just a place to work out; it’s a <strong>community</strong> where support, motivation, and camaraderie are built into everything we do. Whether you’re joining a group fitness class or working with a personal trainer, you’ll always have someone to cheer you on. We’re committed to your success and to creating a positive, inclusive environment where you can feel confident, empowered, and ready to reach your goals.</p>
+</section>
+
+
+
+<footer style="display: flex; justify-content: space-between; align-items: center; padding: 10px; width: 100%; box-sizing: border-box;">
+        
+    <div>
+        <p>&copy; 2024 Gold Gym USA. All Rights Reserved.</p>
+    </div>
+
+    
+    <div style="border-left: 1px solid #000; padding-left: 20px; margin-left: 20px; flex-grow: 1; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; width: 100%;">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('memb') }}">Membership</a></li>
+
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

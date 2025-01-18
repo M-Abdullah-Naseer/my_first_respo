@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',  filename='style-Membership.css')}}">
+    <title>Gold Gym USA</title>
+    
+</head>
+<body>
+
+<div id="top">
+    <p class="hello"><i class="material-icons">fitness_center</i> Gold Gym USA</p>
+    <div class="col">
+        <input type="text"><i class="fa fa-search"></i>
+    </div>
+    <div>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('memb') }}">Membership</a>
+
+    </div>
+</div>
+
+<h1 style="text-align: center;">Membership Page</h1>
+
+<nav><p class="pa" style="text-align: center;">This is the membership page</p></nav>
+
+
+<div class="container">
+    <div class="pac1">
+        <p class="packages">Premium Package 1</p>
+        <ul>
+            <li>Personal Training Sessions</li>
+            <li>Exclusive Access to VIP Areas</li>
+            <li>Unlimited Group Classes</li>
+            <li>Wellness & Recovery Services</li>
+            <li>Free Parking</li>
+            <li>Priority Booking for Classes</li>
+            <li>Complimentary Guest Passes</li>
+        </ul>
+    </div>
+    
+    <div class="pac2">
+        <p class="packages">Premium Package 2</p>
+        <ul>
+            <li>Personalized Nutrition Plans</li>
+            <li>Advanced Fitness Equipment</li>
+            <li>Priority Booking for Classes</li>
+            <li>24/7 Gym Access</li>
+            <li>Exclusive Member Events</li>
+            <li>Free Massage Therapy</li>
+            <li>Discounts on Merchandise</li>
+        </ul>
+    </div>
+    
+    <div class="pac3">
+        <p class="packages">Premium Package 3</p>
+        <ul>
+            <li>Monthly Fitness Assessments</li>
+            <li>Luxury Locker Rooms</li>
+            <li>Free Massage Therapy</li>
+            <li>Exclusive Workshops & Events</li>
+            <li>Private VIP Lounge Access</li>
+            <li>One-on-One Coaching Sessions</li>
+            <li>Free Apparel & Gear</li>
+        </ul>
+    </div>
+</div>
+
+
+<footer style="display: flex; justify-content: space-between; align-items: center; padding: 10px; width: 100%; box-sizing: border-box;">
+        
+    <div>
+        <p>&copy; 2024 Gold Gym USA. All Rights Reserved.</p>
+    </div>
+
+    
+    <div style="border-left: 1px solid #000; padding-left: 20px; margin-left: 20px; flex-grow: 1; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; width: 100%;">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('memb') }}">Membership</a></li>
+
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
